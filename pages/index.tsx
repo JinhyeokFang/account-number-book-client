@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Header from './components/header'
 import styles from '../styles/Home.module.css'
 
 const IndexPage: NextPage = () => {
@@ -10,10 +11,10 @@ const IndexPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Account Number Book
-        </h1>
+
       </main>
     </div>
   )
