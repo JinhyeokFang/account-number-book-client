@@ -1,6 +1,11 @@
+import { FC } from 'react'
 import styles from '../../styles/Card.module.css'
 
-const Card = ({ children }) => {
+interface CardProps {
+    children: JSX.Element
+}
+
+const Card: FC<CardProps> = ({ children }) => {
   return (
     <div>
         card
